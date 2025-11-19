@@ -8,14 +8,21 @@
     <style>
       .star {
         fill: yellow;
-		 border-bottom: 100px solid rgb(255, 255, 0);
+        width: 0px;
+        border-bottom: 100px solid rgb(255, 255, 0);
+        border-left: 50px solid rgba(0, 0, 0, 0);
+        border-right: 50px solid rgba(0, 0, 0, 0);
+      }
+      .bottom {
+        position: absolute;
+        rotate: 180deg;
+        top: 40px;
       }
     </style>
   </head>
   <body>
-    <svg width="200" height="200" class="star">
-      <polygon points="100,10 40,180 190,60 10,60 160,180" class="star" />
-    </svg>
+    <div class="star top"></div>
+    <div class="star bottom"></div>
     <script src="script.js"></script>
     <script></script>
   </body>
